@@ -1,0 +1,158 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height:100vh;
+    background: radial-gradient(circle, rgba(36,172,53,1) 0%, rgba(30,124,30,1) 100%);
+}
+/*Board Header*/
+#board-header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:black;
+    border-bottom:1px solid white;
+}
+#result-message{
+    font-size:35px;
+    text-align:center;
+    color:white;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+/*Computer Board*/
+#computer-board{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-bottom:2px solid #186118;
+    font-size:20px;
+}
+#comp-bank{
+    background:black;
+    color:white;
+    padding-left:20px;
+    text-align:center;
+}
+
+#comp-count{
+    background:black;
+    color:white;
+    padding-left:20px;
+    text-align:center;
+}
+
+
+
+/*Game Console*/
+#game-console{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    color:white;
+}
+#bet-container{
+   text-align:center;
+    position:relative;
+    top:50%;
+
+    transform: translateY(-50%);
+}
+#bet-container label,input,button{
+    margin-bottom:10px;
+}
+#bet-container label{
+    font-size:20px;
+}
+#bet-container input{
+    font-size:20px;
+    text-align:center;
+    outline:none;
+    border:none;
+    border-bottom:2px solid black;
+}
+#bet-container button{
+    font-size:20px;
+    padding:5px 10px;
+    border-radius:20px;
+    outline:none;
+}
+img{
+    width:70px;
+    height:100px;
+  
+}
+#game-container{
+    display:flex;
+    justify-content: space-around;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    display:none;
+}
+#game-container h1{
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+}
+#hit{
+background:black;
+border:1px solid black;
+width:150px;
+height:150px;
+border-radius:50%;
+}
+#stay{
+    background:black;
+    border:1px solid black;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+#another-round{
+    justify-content: space-around;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    display:none;
+
+}
+#play-again{
+    font-size:35px;
+    padding:5px 10px;
+    border-radius:20px;
+    outline: none;
+}
+
+/*User Board*/
+#user-board{
+    grid-row-start: 7;
+    grid-row-end: 10;
+    font-size:20px;
+    position:relative;
+}
+#user-bank{
+    background:black;
+    color:white;
+    padding-left:20px;
+    text-align:center;
+}
+#user-count{
+    background:black;
+    color:white;
+    padding-left:20px;
+    text-align:center;
+}
+#user-cards{
+    display:flex;
+   flex-wrap: wrap;
+    align-content: center;
+    
+}
+

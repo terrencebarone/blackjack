@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blackJack.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <header id="board-header">
+        <h1 id="result-message"></h1>
+    </header>
+    <div id="computer-board">
+        <p id="comp-bank">Computer: <span value=100 id="comp-money">$100</span></p>
+        <p id="comp-count">Count: <span id="comp-count-num"></span></p>
+        <div id="comp-cards"></div>
+            
+        </div>
+    </div>
+    <div id="game-console">
+        <div id="bet-container">
+            <label for="bet">How Much Would Do You Bet?</label><br><br>
+            <input id="bet-amount" name="bet" type="number"><br>
+            <button id="set-bet">Bet</button><br>
+            <p id="bet-message"></p>
+        </div> 
+        <div id="another-round">
+            <button id="play-again">Bet Again?</button>
+        </div>
+        <div id="game-container">
+            <div id="hit"><h1>Hit</h1></div>
+            <div id="stay"><h1>Stay</h1></div>
+        </div>
+    </div>
+    <div id="user-board">
+        <p id="user-bank">Your Bank: <span value=100 id="user-money">$100</span></p>
+        <p id="user-count">Count: <span id="user-count-num"></span></p>
+        <div id="user-cards"></div>
+            
+        </div>
+    </div>
+</body>
+<script src="blackJack.js"></script>
+</html>
